@@ -26,7 +26,6 @@ export class App extends Component {
     this.setState(prevState => ({
       contacts: [...prevState.contacts, { name, id: nanoid(), number }],
     }));
-    this.setState({ name: '', number: '' });
   };
 
   changeFilter = event => {
